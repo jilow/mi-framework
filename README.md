@@ -1,4 +1,4 @@
-# ui-framework
+# mi-framework
 
 Install the mi-framework and kickstart your web project with a minimal CSS framework..
 

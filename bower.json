@@ -1,5 +1,5 @@
 {
-  "name": "ui-framework",
+  "name": "mi-framework",
   "description": "Minimal CSS framework",
   "devDependencies": {
     "prism-element": "PolymerElements/prism-element#^1.2.0",
