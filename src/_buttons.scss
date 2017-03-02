@@ -1,0 +1,77 @@
+// Buttons
+
+.button.material,
+button.material {
+  font-size: 0.8em;
+  background-color: #2196f3;
+  color: #fff;
+  padding: 0.863em 1em;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: background-color .3s ease-out;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  outline:0;
+}
+
+.button.material:focus,
+button.material:focus,
+.button.material.active,
+button.material.active {
+  background-color: #42abff;
+}
+
+.button.material:hover,
+button.material:hover {
+  background-color: #57b4ff;
+}
+
+.button.material.raised,
+button.material.raised {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.button.material.raised:hover,
+button.material.raised:hover,
+.button.material.raised:focus,
+button.material.raised:focus,
+.button.material.raised.active,
+button.material.raised.active {
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14),0 1px 7px 0 rgba(0,0,0,0.12),0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+.button.material.flat, button.material.flat {
+  background-color: transparent;
+  color: inherit;
+}
+
+.button.material.flat:focus,
+button.material.flat:focus,
+.button.material.flat.active,
+button.material.flat.active {
+  background-color: #cccccc;
+}
+
+.button.material.flat:hover,
+button.material.flat:hover {
+  background-color: #dddddd;
+}
+
+.button.material.disabled,
+button.material.disabled,
+.button.material[disabled],
+button.material[disabled] {
+  cursor: not-allowed;
+  color: #d6d6d6;
+}
+.button.material.disabled:hover,
+button.material.disabled:hover,
+.button.material[disabled]:hover,
+button.material[disabled]:hover {
+  background-color: initial;
+  background-color: #2196f3;
+}

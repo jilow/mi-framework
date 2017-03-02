@@ -1,0 +1,33 @@
+// Variables
+
+// Base font size
+$font-size: 16px !default;
+
+// Sizing
+$tiny: 0.5rem !default;
+$small: 1rem !default;
+$medium: 2rem !default;
+$large: 4rem !default;
+$huge: 6rem !default;
+
+// Colours
+$red: #F44336 !default;
+$green: #4CAF50 !default;
+$blue: #2196F3 !default;
+$teal: #009688 !default;
+$orange: #FF9800 !default;
+$yellow: #FFEB3B !default;
+$pink: #E91E63 !default;
+$purple: #9C27B0 !default;
+
+// Semantic colour scheme
+$primary: $blue !default;
+$success: $green !default;
+$info: $teal !default;
+$warning: $orange !default;
+$danger : $red !default;
+
+// Responsive
+$breakpoint-small: 600px;
+$breakpoint-medium: 960px;
+$breakpoint-large: 1280px

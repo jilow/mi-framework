@@ -1,0 +1,27 @@
+{
+  "name": "ui-framework",
+  "version": "1.0.0",
+  "description": "Minimal CSS framework",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "wc-server": "hetznerZA/wc-server#v1.0.0"
+  },
+  "scripts": {
+    "start": "wc-server --no-cache",
+    "watch": "node-sass -r -w src/ --output dist/",
+    "build": "npm run compile:regular && npm run compile:minified",
+    "compile:regular": "node-sass src/framework.scss dist/framework.css --version",
+    "compile:minified": "node-sass src/framework.scss dist/framework.min.css --output-style 'compressed' --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "ux@hetzner.co.za",
+  "license": "MIT"
+}

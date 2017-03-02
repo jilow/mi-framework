@@ -1,0 +1,103 @@
+// Grid
+
+@mixin column($size, $columns) {
+  width: percentage($size / $columns);
+}
+
+@mixin make-columns($size, $total) {
+  @for $i from 1 through $total {
+    .#{$size}-#{$i} {
+      @include column($i, $total);
+    }
+  }
+}
+
+.row {
+  display: block;
+  margin-left: -$small;
+  margin-right: -$small;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+  
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.row.full {
+  max-width: 100%;
+}
+
+.column {
+  display: block;
+  flex: 1 1 auto;
+  max-width: 100%;
+  width: 100%;
+  float: left;
+  padding: 0 $small;
+  margin-left: 0;
+}
+  
+
+// Small Device
+
+@media only screen and (min-width: $breakpoint-small) {
+
+  @include make-columns('small', 12);
+
+  .small-only,
+  .hide-on-medium,
+  .hide-on-large {
+    display: inherit;
+  }
+
+  .hide-on-medium,
+  .medium-only,
+  .large-only {
+    display: none;
+  }
+
+}
+
+// Medium Device
+
+@media only screen and (min-width: $breakpoint-medium) {
+
+  @include make-columns('medium', 12);
+
+  .medium-only,
+  .hide-on-small,
+  .hide-on-large {
+    display: inherit;
+  }
+
+  .hide-on-medium,
+  .small-only,
+  .large-only {
+    display: none;
+  }
+
+}
+
+// Large Device
+
+@media only screen and (min-width: $breakpoint-large) {
+
+  @include make-columns('large', 12);
+
+  .large-only,
+  .hide-on-small,
+  .hide-on-medium {
+    display: inherit;
+  }
+
+  .hide-on-large,
+  .small-only,
+  .medium-only {
+    display: none;
+  }
+  
+}

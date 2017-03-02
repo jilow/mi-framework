@@ -1,0 +1,53 @@
+// Table - Material
+
+table.material,
+table.material th,
+table.material td {
+  border: none;
+}
+
+table.material {
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  display: table;
+  margin-bottom: $medium;
+}
+
+table.material > thead > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+table.material > thead > tr > th,
+table.material > tbody > tr > td {
+  padding: $small $tiny;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 0;
+}
+
+table.material > tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+table.material.bordered > tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+  border-radius: 2px;
+}
+
+table.material.bordered > tbody > tr:last-child {
+  border: none;
+}
+
+table.material.striped > tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table.material.hover > tbody > tr:hover {
+  background-color: #f2f2f2;
+}

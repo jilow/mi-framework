@@ -1,0 +1,10 @@
+{
+  "name": "ui-framework",
+  "description": "Minimal CSS framework",
+  "devDependencies": {
+    "prism-element": "PolymerElements/prism-element#^1.2.0",
+    "marked-element": "PolymerElements/marked-element#^1.2.0"
+  },
+  "author": "ux@hetzner.co.za",
+  "license": "MIT"
+}

@@ -1,0 +1,41 @@
+// Spacing
+
+.padding-none {
+  padding: 0;
+}
+
+.padding-tiny {
+  padding: $tiny;
+}
+
+.padding-medium {
+  padding: $small;
+}
+
+.paddig-big {
+  padding: $medium;
+}
+
+.padding-huge {
+  padding: $large;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.margin-tiny {
+  margin: $tiny;
+}
+
+.margin-medium {
+  margin: $small;
+}
+
+.paddig-big {
+  margin: $medium;
+}
+
+.margin-huge {
+  margin: $large;
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Minimal Interface</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./dist/framework.css">
+  <link rel="import" href="/bower_components/marked-element/marked-element.html">
+  <link rel="import" href="/bower_components/prism-element/prism-highlighter.html">
+  <link rel="import" href="/bower_components/prism-element/prism-theme-default.html">
+
+  <style>
+    body {
+      display: block;
+    }
+    header {
+      display: flex;
+      min-width: 100%;
+      height: 100vh;
+      max-height: 33vh;
+      min-height: 200px;
+      justify-content: center;
+      /*background: linear-gradient(to left bottom, rgb(255, 242, 153) 0%, rgb(195, 246, 255) 100%);*/
+      background-color: #271840;
+    }
+    header > div {
+      position: relative;
+      align-self: center;
+      text-align: center;
+      color: #fff;
+    }
+    header > div > h1 {
+      padding-top: 1rem;
+    }
+    section {
+      width: 100%;
+      max-width: 1060px;
+      margin: 5rem auto;
+      padding: 0 1rem;
+    }
+    section > h1 {
+      margin-bottom: 2.0rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+    p {
+      margin-bottom: 1.5rem;
+    }
+    pre {
+      border: 0;
+      border-left: 4px solid #a150b1;
+      color: #655d5d;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    #typography > .demo > * {
+      margin-bottom: 1rem;
+    }
+    #grid-layout > .demo .row {
+      margin: 0;
+    }
+    #grid-layout > .demo .column {
+      padding: 0;
+    }
+    #grid-layout > .demo .column > div {
+      background-color: #9b5aff;
+      color: #fff;
+      margin: 1px;
+      padding: 1rem 2rem;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <img src="./logo.png" style="max-height: 60px">
+      <h1>mi-framework</h1>
+    </div>
+  </header>
+
+  <section id="getting-started">
+
+    <h1>Getting Started</h1>
+
+    <p>Install the mi-framework and kickstart your web project with a minimal CSS framework.</p>
+
+    <strong>Install with Bower</strong>
+
+    <pre>$ bower install hetznerZA/mi-framework</pre>
+
+    <strong>Install with npm</strong>
+
+    <pre>$ npm install hetznerZA/mi-framework</pre>
+
+  </section>
+
+  <section id="grid-layout">
+
+    <h1>Grid Layout</h1>
+
+    <p></p>
+
+    <div class="demo">
+
+      <div class="row">
+        <div class="column">
+          <div>.column</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column small-6">
+          <div>.column .small-6</div>
+        </div>
+        <div class="column small-6">
+          <div>.column .small-6</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column large-6 medium-4 small-8">
+          <div>.column .large-6 .medium-4 .small-8</div>
+        </div>
+        <div class="column large-4 right">
+          <div>.column .large-4 .right</div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </section>
+
+  <section id="typography">
+
+    <h1>Typography</h1>
+
+    <!-- <p>We use the <code>rem</code> units for all typography with a base font size of 16px.</p> -->
+
+    <div class="demo">
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <blockquote>blockquote</blockquote>
+    </div>
+    
+  </section>
+
+  <section id="buttons">
+    
+    <h1>Buttons</h1>
+
+    <div class="demo">
+      <button class="material">.material</button>
+      <button class="material raised">.material.raised</button>
+      <button class="material flat">.material.flat</button>
+      <button class="material" disabled>.material disabled</button>
+    </div>
+
+  </section>
+
+  <section id="tables">
+    
+    <h1>Tables</h1>
+
+    <div class="demo">
+      <table class="material bordered hover">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Item Name</th>
+              <th>Item Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Alvin</td>
+              <td>Eclair</td>
+              <td>$0.87</td>
+            </tr>
+            <tr>
+              <td>Alan</td>
+              <td>Jellybean</td>
+              <td>$3.76</td>
+            </tr>
+            <tr>
+              <td>Jonathan</td>
+              <td>Lollipop</td>
+              <td>$7.00</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+
+  </section>
+
+  <section id="inputs">
+
+    <h1>Inputs</h1>
+
+    <input class="material" placeholder="Type here" required>
+
+  </section>
+
+  <section id="iframe">
+
+    <h1>Iframes</h1>
+
+    <div class="demo">
+      <div class="video-container" style="width: 100%">
+        <iframe src="https://www.youtube.com/embed/SJpWgLakkXI"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>

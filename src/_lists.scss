@@ -1,0 +1,19 @@
+// Lists
+
+ul.material {
+  margin: $tiny 0 $small 0;
+  padding: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+}
+
+ul.material > li {
+  list-style: none;
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: $small $small;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
