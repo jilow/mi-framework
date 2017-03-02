@@ -12,6 +12,8 @@ npm install
 
 ## Demo
 
+[View the online demo](https://hetznerza.github.io/mi-framework/)
+
 The project's `index.html` is demo of the framework.
 
 ## Development
