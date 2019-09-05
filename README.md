@@ -4,19 +4,25 @@ Install the mi-framework and kickstart your web project with a minimal CSS frame
 
 ## Installation
 
+```
+npm install jilow/mi-framework
+```
+
+## Demo
+
+[View the online demo.](https://jilow.github.io/mi-framework/)
+
+## Examples
+
+See the `index.html` file for usage examples.
+
+## Development
+
 First, install [npm](https://www.npmjs.com/) (assuming you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install
 ```
-
-## Demo
-
-[View the online demo](https://jilow.github.io/mi-framework/)
-
-The project's `index.html` is demo of the framework.
-
-## Development
 
 To run the development CDN server.
 ```bash
